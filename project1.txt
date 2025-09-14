@@ -1,0 +1,16 @@
+
+sentence = "azerty SDefFGd FRREDvgggd dldldl."
+
+//length:
+Length = 0
+word=1
+Upper =0
+//for loop:
+for carracter in sentence =>
+length =length+1
+if carracter == " " => word=word+1 end if
+if carracter is Upper => Upper = Upper+1
+end of for loop
+write length
+write word
+write Upper
