@@ -1,0 +1,25 @@
+// Variable declaration:
+
+set1 =[3,2,5,8,7,9]
+set2 =[4,1,2,6,8,5]
+set3 = []
+sumset3 = 0
+
+// fonction declaration:
+
+find destinct elements:
+find_distinct (a,b):
+	for i in a
+		if i is not in b
+			set3.append (i)
+
+find_distinct (set1,set2)
+find_distinct (set2,set1)
+
+for i in set3:
+	sumset3 = sumset3+i
+
+write sumset3
+
+
+
