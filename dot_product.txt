@@ -1,0 +1,40 @@
+
+
+Procedure dot_product(v1, v2, n, ps)
+    ps:=0
+
+    For i from 1 to n do
+
+        ps = ps + (v1[i] * v2[i])
+    EndFor
+EndProcedure
+
+Algorithm Orthogonality_Checking:
+
+     n is (dimension of vectors)
+     m  is (number of pairs to test)
+
+    For k from 1 to m do
+        Read vector v1 of size n
+        Read vector v2 of size n
+
+        Call procedure:
+        dot_product(v1, v2, n, ps)
+
+        If ps = 0 then
+            Print "Vectors are orthogonal"
+        Else
+            Print "Vectors are NOT orthogonal"
+        EndIf
+    EndFor
+EndAlgorithm
+
+replace procedure by fonction:
+Function dot_product(v1, v2, n)
+    ps = 0
+    For i from 1 to n do
+        ps  = ps + (v1[i] * v2[i])
+    EndFor
+    Return ps
+EndFunction
+
